@@ -51,3 +51,16 @@ study = False
 
 print(play)
 print(study)
+
+# More about Numbers and floats
+print(abs(-123)) # 123
+print(round(3.745)) # 4
+print(round(3.224)) # 3
+print(round(3.5)) # 4
+print(round(3.755,1)) # 3.8
+
+# add num_1 and num_2 to get output as 300
+num_1 = '100'
+num_2 = '200'
+print(num_1 + num_2) # 100200
+print(int(num_1) + int(num_2)) # 300
