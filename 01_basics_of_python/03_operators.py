@@ -24,3 +24,14 @@ print(ans)
 val1 = 5
 val2 = 4
 print(val1 is val2)
+
+'''
+    Logical operators are used for evaluating the boolean logical expressions
+    AND
+    OR
+    NOT
+'''
+
+print(True and False)
+print(True or False)
+print(not True)
