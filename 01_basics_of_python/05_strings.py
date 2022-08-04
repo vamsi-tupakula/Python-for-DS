@@ -30,3 +30,6 @@ print(new_message)
 
 # see all the methods and attributes related to a variable
 print(dir(name))
+
+# to see more about string methods and attributes
+print(help(str))
