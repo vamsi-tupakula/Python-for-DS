@@ -40,3 +40,7 @@ print(b)
 
 course = "Data Science with Python"
 print(len(course)) # to print the length of the string
+
+# accessing the string elements using indexing
+print(course[0]) # print char at index 0
+print(course[5]) # print char at index 5
