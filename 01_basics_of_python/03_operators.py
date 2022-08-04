@@ -35,3 +35,19 @@ print(val1 is val2)
 print(True and False)
 print(True or False)
 print(not True)
+
+'''
+    String operations :
+    + concatenation
+    * multiply a string (repeat the string for n times)
+    'in' used to search in another search returns true or false;
+'''
+
+first_name = "python"
+last_name = "programming"
+
+ext = "py"
+
+print(first_name + " " +  last_name)
+print(first_name*3)
+print(ext in first_name)
