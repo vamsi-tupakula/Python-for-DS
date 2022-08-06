@@ -18,5 +18,28 @@ def primeFactors(n):
     if(n > 1):
         print(n)
 
+def fun():
+    # if we dont wanna write any thing inside function and still our program needs to run then we use pass keyword
+    pass
+
+def hello_fun(greeting, name="Dev"):
+    return f"{greeting}, {name}"
+
 n = int(input("Enter any number : "))
 primeFactors(n)
+
+print(hello_fun("hey!"))
+print(hello_fun("hey!",name = "python"))
+
+# args and kwargs
+def nums_sum(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+nums_sum(1, 2, 3, a="a",b="b")
+
+# unpacking
+nums = {1,2,3}
+nums_squares = {"1": 1,"2": 4,"3": 9}
+nums_sum(nums, nums_squares)
+nums_sum(*nums, **nums_squares)
