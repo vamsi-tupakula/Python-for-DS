@@ -83,3 +83,12 @@ print(list(reversed_list))
 print(min(nums))
 print(max(nums))
 print(sum(nums))
+
+# looping over lists
+for lang in languages:
+    print(lang)
+
+# prints the index and lang
+# ! we can pass start argument if we dont want to start indexing at 0
+for index, lang in enumerate(languages):
+    print(index, lang)
