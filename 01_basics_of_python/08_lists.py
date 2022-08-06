@@ -92,3 +92,10 @@ for lang in languages:
 # ! we can pass start argument if we dont want to start indexing at 0
 for index, lang in enumerate(languages):
     print(index, lang)
+
+# convert list to string and vice-versa
+lang_str = " ".join(languages)
+print(lang_str)
+
+new_list = lang_str.split(' ')
+print(new_list)
