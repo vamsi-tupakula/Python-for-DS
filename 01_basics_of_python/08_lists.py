@@ -1,6 +1,9 @@
 """
     Lists are used to store multiple items in a single variable. Lists are one of the 4 in-built data structures, other three are sets, dictionary, and tuples
 """
+from operator import index
+
+
 languages = ['python','java','c++','carbon']
 
 # printing entire list
@@ -46,7 +49,10 @@ print(languages)
 # remove last element
 popped = languages.pop()
 print(languages)
-print(popped)
+print("popped : " + popped)
+
+# find index of first occurence of element
+print(languages.index('java'))
 
 # reversing the list
 languages.reverse()
@@ -64,3 +70,16 @@ print(languages)
 
 nums.sort(reverse=True)
 print(nums)
+
+# make changes without altering the original
+sorted_list = sorted(languages, reverse=True)
+print(sorted_list)
+print(languages)
+
+reversed_list = reversed(languages)
+print(list(reversed_list))
+
+# some useful functions
+print(min(nums))
+print(max(nums))
+print(sum(nums))
