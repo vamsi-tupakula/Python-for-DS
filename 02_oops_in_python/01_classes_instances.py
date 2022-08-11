@@ -6,9 +6,20 @@
 class Employee:
     # constructor
     # every time we create a new instance this constructor will run.
-    def __init__(self):
-        print("Constructor is initialized....")
+    def __init__(self,first,last,age):
+        self.first = first
+        self.last = last
+        self.age = age
+        self.email = first + "." + last + "@company.com"
+    
+    def full_name(self):
+        return self.first + " " + self.last
 
 # employee objects or instances
-emp_1 = Employee()
-emp_2 = Employee()
+emp_1 = Employee("Jhonny","Depp", 22)
+emp_2 = Employee("Robert","Downey", 25)
+
+print(emp_1.email)
+
+# get full name
+print(emp_2.full_name())
