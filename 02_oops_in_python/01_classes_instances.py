@@ -6,6 +6,7 @@
 class Employee:
     # class variables
     email_suffix = "@company.com"
+    employee_count = 0
 
     # constructor
     # every time we create a new instance this constructor will run.
@@ -14,13 +15,19 @@ class Employee:
         self.last = last
         self.age = age
         self.email = first + "." + last + self.email_suffix
+        Employee.employee_count += 1
     
     def full_name(self):
         return f"{self.first} {self.last}"
 
+# employee count
+print(Employee.employee_count) # 0
+
 # employee objects or instances
 emp_1 = Employee("Jhonny","Depp", 22)
 emp_2 = Employee("Robert","Downey", 25)
+
+print(Employee.employee_count) # 2
 
 print(emp_1.email)
 
