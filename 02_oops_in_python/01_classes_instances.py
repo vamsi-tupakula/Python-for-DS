@@ -22,4 +22,4 @@ emp_2 = Employee("Robert","Downey", 25)
 print(emp_1.email)
 
 # get full name
-print(emp_2.full_name())
+print(emp_2.full_name()) # emp_2.full_name() is similar to Employee.full_name(emp_2)
