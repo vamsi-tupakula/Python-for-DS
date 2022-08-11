@@ -13,7 +13,7 @@ class Employee:
         self.email = first + "." + last + "@company.com"
     
     def full_name(self):
-        return self.first + " " + self.last
+        return f"{self.first} {self.last}"
 
 # employee objects or instances
 emp_1 = Employee("Jhonny","Depp", 22)
