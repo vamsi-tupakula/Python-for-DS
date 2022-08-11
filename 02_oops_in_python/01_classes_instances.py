@@ -4,13 +4,16 @@
 """
 
 class Employee:
+    # class variables
+    email_suffix = "@company.com"
+
     # constructor
     # every time we create a new instance this constructor will run.
     def __init__(self,first,last,age):
         self.first = first
         self.last = last
         self.age = age
-        self.email = first + "." + last + "@company.com"
+        self.email = first + "." + last + self.email_suffix
     
     def full_name(self):
         return f"{self.first} {self.last}"
