@@ -26,3 +26,6 @@ print(emp_1.email)
 
 # get full name
 print(emp_2.full_name()) # emp_2.full_name() is similar to Employee.full_name(emp_2)
+
+# gives complete emp_1 object as dictionary
+print(emp_1.__dict__)
