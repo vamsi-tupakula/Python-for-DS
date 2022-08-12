@@ -24,6 +24,11 @@ class Employee:
     @classmethod
     def set_suffix(cls, new_suffix):
         cls.email_suffix = new_suffix
+    
+    @classmethod
+    def from_string(cls, emp_str):
+        first,last,age = emp_str.split('-')
+        return cls(first,last,age)
 
 # employee count
 print(Employee.employee_count) # 0
@@ -42,5 +47,14 @@ print(emp_2.full_name()) # emp_2.full_name() is similar to Employee.full_name(em
 # gives complete emp_1 object as dictionary
 print(emp_1.__dict__)
 
-Employee.set_suffix("company@emp.com")
+Employee.set_suffix(".company@emp.com")
 print(emp_1.email_suffix)
+
+# creating objects using class methods
+emp_str_1 = "jack-sparrow-29"
+emp_str_2 = "steve-rogers-35"
+
+emp_1_str = Employee.from_string(emp_str_1)
+emp_2_str = Employee.from_string(emp_str_2)
+
+print(emp_1_str.email)
