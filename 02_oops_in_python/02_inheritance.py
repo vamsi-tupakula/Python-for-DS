@@ -55,3 +55,13 @@ mgr_1.add_emp(dev_3)
 mgr_1.add_emp(dev_4)
 mgr_1.remove_emp(dev_1)
 mgr_1.print_emp()
+
+# check if an object is an instance of a class or not
+print(isinstance(mgr_1, Manager))
+print(isinstance(mgr_1, Employee))
+print(isinstance(mgr_1, Developer))
+
+# check if a class is subclass of another
+print(issubclass(Manager,Employee))
+print(issubclass(Manager,Developer))
+print(issubclass(Developer,Employee))
