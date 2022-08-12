@@ -30,6 +30,13 @@ class Employee:
         first,last,age = emp_str.split('-')
         return cls(first,last,age)
 
+    # static methods does not pass either class or instance they behave like normal functions except we include in class because we have some logical connection
+    @staticmethod
+    def is_workday(day):
+        if day.weekday() == 5 or day.weekday() == 6:
+            return False
+        return True
+
 # employee count
 print(Employee.employee_count) # 0
 
@@ -58,3 +65,9 @@ emp_1_str = Employee.from_string(emp_str_1)
 emp_2_str = Employee.from_string(emp_str_2)
 
 print(emp_1_str.email)
+
+# working with staticmethods
+import datetime
+my_date = datetime.date(2022,8,13)
+
+print(Employee.is_workday(my_date))
