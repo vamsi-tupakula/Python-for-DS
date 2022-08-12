@@ -20,6 +20,11 @@ class Employee:
     def full_name(self):
         return f"{self.first} {self.last}"
 
+    # every function inside a class always takes instance as first argument to change this behavior and to send class as first argument we use class methods
+    @classmethod
+    def set_suffix(cls, new_suffix):
+        cls.email_suffix = new_suffix
+
 # employee count
 print(Employee.employee_count) # 0
 
@@ -36,3 +41,6 @@ print(emp_2.full_name()) # emp_2.full_name() is similar to Employee.full_name(em
 
 # gives complete emp_1 object as dictionary
 print(emp_1.__dict__)
+
+Employee.set_suffix("company@emp.com")
+print(emp_1.email_suffix)
