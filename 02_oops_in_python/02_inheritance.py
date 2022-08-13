@@ -65,3 +65,5 @@ print(isinstance(mgr_1, Developer))
 print(issubclass(Manager,Employee))
 print(issubclass(Manager,Developer))
 print(issubclass(Developer,Employee))
+
+# In classes, the functions whose name starts with __ are known as dunder methods or special or magic methods
