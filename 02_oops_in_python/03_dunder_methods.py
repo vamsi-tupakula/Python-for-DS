@@ -17,3 +17,5 @@ class Employee:
 emp_1 = Employee("John","Wick",1200000)
 print(emp_1)
 # run above line uncommenting repr function observe the difference
+print(repr(emp_1))
+print(str(emp_1))
