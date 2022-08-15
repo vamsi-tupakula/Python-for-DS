@@ -26,3 +26,7 @@ ages = [28,29,32,35]
 
 pairs = zip(names, ages)
 print(list(pairs))
+
+# code-block 7 (zip function for dictionary)
+my_dict = {name: age for name,age in zip(names,ages)}
+print(my_dict)
