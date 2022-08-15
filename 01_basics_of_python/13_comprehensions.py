@@ -30,3 +30,10 @@ print(list(pairs))
 # code-block 7 (zip function for dictionary)
 my_dict = {name: age for name,age in zip(names,ages)}
 print(my_dict)
+
+"""Set Comprehensions"""
+
+# code-block 8 
+new_list = [1,1,1,2,3,2,3,2,3,2]
+my_set = {x for x in new_list}
+print(my_set)
