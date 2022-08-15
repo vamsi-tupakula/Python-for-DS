@@ -15,3 +15,7 @@ print(list(my_list))
 # code-block 4 (filter + lambda)
 my_list = filter(lambda x: x%2 == 0, range(11))
 print(list(my_list))
+
+# code-block 5
+my_list = [(letter,num) for letter in 'abcd' for num in range(4)]
+print(my_list)
