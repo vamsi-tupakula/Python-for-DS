@@ -9,3 +9,6 @@ import os
 # change working directory
 # os.chdir('C:\\Users\HP\\Videos\\Programming\\Python\\python-for-ds\\')
 # print(os.getcwd())
+
+# list directory
+print(os.listdir())
