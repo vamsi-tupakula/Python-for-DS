@@ -11,10 +11,16 @@ import os
 # print(os.getcwd())
 
 # list directory
-print(os.listdir())
+# print(os.listdir())
 
 # create directory
 os.mkdir('demo')
 
 # remove directory
 os.rmdir('demo')
+
+# get home directory
+print(os.environ.get('HOME'))
+
+file_name = os.path.join(os.environ.get('HOME'), 'test_file.py')
+print(file_name)
