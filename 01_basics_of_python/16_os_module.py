@@ -4,4 +4,8 @@ import os
 # print(dir(os))
 
 # get current working directory
-print(os.getcwd())
+# print(os.getcwd())
+
+# change working directory
+# os.chdir('C:\\Users\HP\\Videos\\Programming\\Python\\python-for-ds\\')
+# print(os.getcwd())
