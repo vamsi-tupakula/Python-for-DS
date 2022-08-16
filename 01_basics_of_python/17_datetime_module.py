@@ -12,3 +12,7 @@ print("month :", today.month)
 print("day :", today.day)
 print('weekday :', today.weekday()) # monday - 0 & sunday - 6
 print("isoweekday :", today.isoweekday()) # monday - 1 & sunday - 7
+
+delta = datetime.timedelta(days=7)
+print(today - delta)
+print(today + delta)
