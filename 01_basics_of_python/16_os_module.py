@@ -12,3 +12,9 @@ import os
 
 # list directory
 print(os.listdir())
+
+# create directory
+os.mkdir('demo')
+
+# remove directory
+os.rmdir('demo')
