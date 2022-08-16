@@ -7,3 +7,8 @@ print(my_date)
 # get todays date
 today = datetime.date.today()
 print(today)
+print("year :", today.year)
+print("month :", today.month)
+print("day :", today.day)
+print('weekday :', today.weekday()) # monday - 0 & sunday - 6
+print("isoweekday :", today.isoweekday()) # monday - 1 & sunday - 7
