@@ -29,3 +29,8 @@ print(t.hour)
 t = datetime.datetime.now()
 print(t)
 print(t + delta)
+
+import pytz
+
+dt = datetime.datetime.now(tz=pytz.UTC)
+print(dt)
