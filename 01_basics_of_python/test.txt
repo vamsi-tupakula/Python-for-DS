@@ -1,0 +1,3 @@
+this is a test file.
+--------
+this file is created just to work with file objects.
