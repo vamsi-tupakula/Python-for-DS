@@ -5,14 +5,19 @@ my_date = datetime.date(2003, 7, 23)
 print(my_date)
 
 # get todays date
-today = datetime.date.today()
-print(today)
-print("year :", today.year)
-print("month :", today.month)
-print("day :", today.day)
-print('weekday :', today.weekday()) # monday - 0 & sunday - 6
-print("isoweekday :", today.isoweekday()) # monday - 1 & sunday - 7
+today_date = datetime.date.today()
+print(today_date)
+print("year :", today_date.year)
+print("month :", today_date.month)
+print("day :", today_date.day)
+print('weekday :', today_date.weekday()) # monday - 0 & sunday - 6
+print("isoweekday :", today_date.isoweekday()) # monday - 1 & sunday - 7
 
 delta = datetime.timedelta(days=7)
-print(today - delta)
-print(today + delta)
+print(today_date - delta)
+print(today_date + delta)
+
+bday = datetime.date(2023, 7, 23)
+till_bday = bday - today_date
+print(till_bday)
+print(till_bday.days)
