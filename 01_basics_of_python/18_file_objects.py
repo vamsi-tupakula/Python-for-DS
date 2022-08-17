@@ -13,3 +13,7 @@ with open('test.txt', 'r') as f:
 
     for line in f:
         print(line, end='')
+
+
+with open('test2.txt', 'w') as f:
+    f.write('New Test File....')
