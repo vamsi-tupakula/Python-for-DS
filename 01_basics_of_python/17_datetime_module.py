@@ -25,3 +25,7 @@ print(till_bday.days)
 t = datetime.time(9, 54, 22, 0)
 print(t)
 print(t.hour)
+
+t = datetime.datetime.now()
+print(t)
+print(t + delta)
