@@ -12,3 +12,7 @@ print(value)
 names = ['tony','steve','banner','wanda','stephen']
 name = random.choice(names)
 print(name)
+
+nums = [x for x in range(1,11)]
+random.shuffle(nums)
+print(nums)
