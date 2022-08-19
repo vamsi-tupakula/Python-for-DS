@@ -16,3 +16,6 @@ print(name)
 nums = [x for x in range(1,11)]
 random.shuffle(nums)
 print(nums)
+
+lucky_nums = random.sample(nums, k=3) # gives 3 unique nums for nums list
+print(lucky_nums)
