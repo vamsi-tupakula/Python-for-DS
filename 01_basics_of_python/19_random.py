@@ -8,3 +8,7 @@ print(value)
 
 value = random.randint(1,10) # random value between 1 and 10 including both
 print(value)
+
+names = ['tony','steve','banner','wanda','stephen']
+name = random.choice(names)
+print(name)
