@@ -14,6 +14,11 @@ pattern = re.compile(r'abc')
 # match = pattern.search(test_string)
 # print(match)
 
-matches = re.findall(pattern, test_string)
+# matches = re.findall(pattern, test_string)
+# for match in matches:
+#     print(match)
+
+# ṃatch object methods
+matches = pattern.finditer(test_string)
 for match in matches:
-    print(match)
+    print(match.span(), match.group(),"start :", match.start(),"end :", match.end())
