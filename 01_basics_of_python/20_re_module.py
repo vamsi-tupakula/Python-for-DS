@@ -11,5 +11,9 @@ pattern = re.compile(r'abc')
 # match = pattern.match(test_string)
 # print(match)
 
-match = pattern.search(test_string)
-print(match)
+# match = pattern.search(test_string)
+# print(match)
+
+matches = re.findall(pattern, test_string)
+for match in matches:
+    print(match)
