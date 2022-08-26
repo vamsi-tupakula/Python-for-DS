@@ -8,5 +8,8 @@ pattern = re.compile(r'abc')
 # for match in matches:
 #     print(match)
 
-match = pattern.match(test_string)
+# match = pattern.match(test_string)
+# print(match)
+
+match = pattern.search(test_string)
 print(match)
