@@ -16,3 +16,10 @@ i = 5
 while(i > 0):
     print(i)
     i = i - 1
+
+cars = ['Koenigsegg CCXR Trevita', 'Lamborghini Veneno', 'W Motors Lykan Hypersport', 'Mansory Vivere Bugatti Veyron', 'Ferrari F60 America']
+
+for car in cars:
+    print(car)
+else:
+    print('In the else block :-)')
