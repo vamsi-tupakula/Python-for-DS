@@ -1,7 +1,6 @@
 """
     Lists are used to store multiple items in a single variable. Lists are one of the 4 in-built data structures, other three are sets, dictionary, and tuples
 """
-from operator import index
 
 
 languages = ['python','java','c++','carbon']
