@@ -64,3 +64,14 @@ num_1 = '100'
 num_2 = '200'
 print(num_1 + num_2) # 100200
 print(int(num_1) + int(num_2)) # 300
+
+
+# Scoping
+# LEGB - Local, Enclosing, Global Built-in
+x = 'global x'
+
+def test():
+    x = 'local y'
+    print(x)
+
+test()
