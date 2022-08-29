@@ -71,7 +71,8 @@ print(int(num_1) + int(num_2)) # 300
 x = 'global x'
 
 def test():
-    x = 'local y'
-    print(x)
+    global x
+    x = 'local x'
 
 test()
+print(x)
