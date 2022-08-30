@@ -12,3 +12,5 @@ print(match_text)
 
 match = soup.find('div', class_='footer')
 print(match)
+# get h1 tag inside the footer div
+print(match.h1.text)
