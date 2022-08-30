@@ -9,3 +9,6 @@ match = soup.title
 match_text = soup.title.text
 print(match)
 print(match_text)
+
+match = soup.find('div', class_='footer')
+print(match)
