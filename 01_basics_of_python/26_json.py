@@ -20,8 +20,11 @@ people_string = '''
 '''
 
 data = json.loads(people_string)
-print(type(data))
-print(type(data['people']))
-print()
+# print(type(data))
+# print(type(data['people']))
+# print()
 for person in data['people']:
-    print(person)
+    del person['emails']
+
+new_string = json.dumps(data, indent=2, sort_keys=True)
+print(new_string)
