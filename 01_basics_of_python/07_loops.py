@@ -21,5 +21,14 @@ cars = ['Koenigsegg CCXR Trevita', 'Lamborghini Veneno', 'W Motors Lykan Hypersp
 
 for car in cars:
     print(car)
-else:
+else: # this can be called as no-break
     print('In the else block :-)')
+
+ls = [1,2,3,4,5]
+
+for i in ls:
+    print(i)
+    if i == 3:
+        break
+else:
+    print("in the for/else")
