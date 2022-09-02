@@ -16,3 +16,5 @@ if __name__ == "__main__":
 
 generally people often use this syntax which means if this file is ran directly by python then execute the statements inside the 'if' block, else if file is ran from other file then don't do this....
 """
+
+helping_module.main()

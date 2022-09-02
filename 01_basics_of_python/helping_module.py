@@ -12,8 +12,11 @@ def linear_search(arr, target):
         
     return -1
 
+def main():
+    print('helping_module\'s main method...')
 
 print('helping_module __name__ :', __name__)
 
 if __name__ == '__main__':
+    main()
     print('this file is ran individually....')
