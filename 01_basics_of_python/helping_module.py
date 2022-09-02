@@ -14,3 +14,6 @@ def linear_search(arr, target):
 
 
 print('helping_module __name__ :', __name__)
+
+if __name__ == '__main__':
+    print('this file is ran individually....')

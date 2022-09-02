@@ -9,3 +9,10 @@ If we import someother module, then that module name variable will be by default
 """
 
 import helping_module
+
+"""
+if __name__ == "__main__":
+    pass
+
+generally people often use this syntax which means if this file is ran directly by python then execute the statements inside the 'if' block, else if file is ran from other file then don't do this....
+"""
