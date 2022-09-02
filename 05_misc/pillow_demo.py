@@ -9,4 +9,6 @@ image1 = Image.open('puppy_1.jpg')
 
 for img in os.listdir('.'):
     if img.endswith('.jpg'):
-        print(img)
+        image = Image.open(img)
+        f_name, f_ext = os.path.splitext(img)
+        image.save('pngs/{}.png'.format(f_name))
