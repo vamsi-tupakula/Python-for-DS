@@ -25,5 +25,10 @@ import os
 #         image.thumbnail(size_300)
 #         image.save('300/{}_300{}'.format(f_name,f_ext))
 
-image1 = Image.open('puppy_1.jpg')
-image1.rotate(90).save('puppy_1_rotate.jpg')
+# rotate images
+# image1 = Image.open('puppy_1.jpg')
+# image1.rotate(90).save('puppy_1_rotate.jpg')
+
+# make black and white images
+image2 = Image.open('puppy_2.jpg')
+image2.convert(mode='L').save('puppy_2_bw.jpg')
