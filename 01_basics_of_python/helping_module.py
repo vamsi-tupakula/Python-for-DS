@@ -11,3 +11,6 @@ def linear_search(arr, target):
             return index
         
     return -1
+
+
+print('helping_module __name__ :', __name__)
