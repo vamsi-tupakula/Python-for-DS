@@ -1,4 +1,4 @@
-from PIL import Image
+from PIL import Image, ImageFilter
 import os
 
 # image1 = Image.open('puppy_1.jpg')
@@ -30,5 +30,9 @@ import os
 # image1.rotate(90).save('puppy_1_rotate.jpg')
 
 # make black and white images
-image2 = Image.open('puppy_2.jpg')
-image2.convert(mode='L').save('puppy_2_bw.jpg')
+# image2 = Image.open('puppy_2.jpg')
+# image2.convert(mode='L').save('puppy_2_bw.jpg')
+
+# make blur images using ImageFilter
+image3 = Image.open('puppy_3.jpg')
+image3.filter(ImageFilter.GaussianBlur(3)).save('puppy_3_blur.jpg')
