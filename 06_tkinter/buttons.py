@@ -14,7 +14,9 @@ button = tk.Button(my_win,
                    bg='#1A4D2E',
                    fg='#FF9F29',
                    activeforeground='#FF9F29',
-                   activebackground='#1A4D2E')
+                   activebackground='#1A4D2E',
+                   # state=tk.DISABLED
+                   )
 button.pack()
 
 my_win.mainloop()
