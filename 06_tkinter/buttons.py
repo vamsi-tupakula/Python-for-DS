@@ -3,6 +3,9 @@ import tkinter as tk
 my_win = tk.Tk()
 my_win.geometry('400x200')
 
+# create photoimage
+photo = tk.PhotoImage(file='icon.png')
+
 def my_func():
     print("button clicked...")
 
@@ -15,7 +18,10 @@ button = tk.Button(my_win,
                    fg='#FF9F29',
                    activeforeground='#FF9F29',
                    activebackground='#1A4D2E',
-                   # state=tk.DISABLED
+                   # state=tk.DISABLED,
+                   image=photo,
+                   compound='left',
+                   padx=10
                    )
 button.pack()
 
