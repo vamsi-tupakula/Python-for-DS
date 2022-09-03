@@ -20,8 +20,9 @@ def backspace():
 
 # create basic entrybox
 entry = tk.Entry(my_win,
-                 font=('Comic Sans', 18))
-entry.insert(0, "Name is :") # similar to placeholder..
+                 font=('Comic Sans', 18),
+                 show='•')
+# entry.insert(0, "Name is :") # similar to placeholder..
 entry.pack(side='left')
 
 # create submit button
