@@ -9,7 +9,10 @@ def my_func():
 # creating basic button
 button = tk.Button(my_win,
                    text='Click Me',
-                   command=my_func)
+                   command=my_func,
+                   font=('Comic Sans', 15, 'bold'),
+                   bg='#1A4D2E',
+                   fg='#FF9F29')
 button.pack()
 
 my_win.mainloop()
