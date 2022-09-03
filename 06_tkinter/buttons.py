@@ -6,8 +6,12 @@ my_win.geometry('400x200')
 # create photoimage
 photo = tk.PhotoImage(file='icon.png')
 
+count = 0
+
 def my_func():
-    print("button clicked...")
+    global count
+    count = count + 1
+    print("button clicked...", count, "times")
 
 # creating basic button
 button = tk.Button(my_win,
