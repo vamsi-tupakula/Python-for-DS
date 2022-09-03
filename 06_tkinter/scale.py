@@ -10,7 +10,8 @@ def get_val():
 scale = tk.Scale(my_win,
                  from_=0,
                  to_=100,
-                 length=300)
+                 length=300,
+                 orient=tk.HORIZONTAL)
 scale.pack()
 
 # button to get the value
