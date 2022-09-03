@@ -4,3 +4,4 @@ Learn Tkinter this order :
 2. labels.py
 3. label_image.py
 4. buttons.py
+5. entry_box.py
