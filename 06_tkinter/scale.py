@@ -11,7 +11,11 @@ scale = tk.Scale(my_win,
                  from_=0,
                  to_=100,
                  length=300,
-                 orient=tk.HORIZONTAL)
+                 orient=tk.HORIZONTAL,
+                 font=('Comic Sans', 10),
+                 showvalue=0, # hides the current value
+                 tickinterval_=10)
+scale.set(50) # sets the initial value to 50
 scale.pack()
 
 # button to get the value
