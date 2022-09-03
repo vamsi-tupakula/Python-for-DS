@@ -12,7 +12,9 @@ button = tk.Button(my_win,
                    command=my_func,
                    font=('Comic Sans', 15, 'bold'),
                    bg='#1A4D2E',
-                   fg='#FF9F29')
+                   fg='#FF9F29',
+                   activeforeground='#FF9F29',
+                   activebackground='#1A4D2E')
 button.pack()
 
 my_win.mainloop()
