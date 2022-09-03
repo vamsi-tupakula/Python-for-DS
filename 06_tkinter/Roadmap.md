@@ -9,6 +9,7 @@
 7. scale.py
 8. grid.py
 9. frames.py
+10. file_dialog.py
 
 ### Left Topics
 1. RadioButtons
