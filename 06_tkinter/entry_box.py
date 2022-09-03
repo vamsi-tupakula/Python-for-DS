@@ -7,20 +7,21 @@ my_win.geometry('500x100')
 def submit():
     entry_text = entry.get()
     print(entry_text)
+    # disable entry box after first submit
+    entry.config(state=tk.DISABLED)
 
 # delete function
 def delete():
-    entry_text = entry.get()
-    print(entry_text)
+    entry.delete(0,tk.END)
 
 # backspace function
 def backspace():
-    entry_text = entry.get()
-    print(entry_text)
+    entry.delete(len(entry.get())-1,tk.END)
 
 # create basic entrybox
 entry = tk.Entry(my_win,
                  font=('Comic Sans', 18))
+entry.insert(0, "Name is :") # similar to placeholder..
 entry.pack(side='left')
 
 # create submit button
