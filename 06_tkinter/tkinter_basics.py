@@ -13,4 +13,7 @@ my_win.title('GUI using Tkinter')
 icon = tk.PhotoImage(file='icon.png')
 my_win.iconphoto(True, icon)
 
+# make changes to the window
+my_win.config(bg='#ECE5C7')
+
 my_win.mainloop()
