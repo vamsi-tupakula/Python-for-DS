@@ -10,6 +10,7 @@
 8. grid.py
 9. frames.py
 10. file_dialog.py
+11. text_area.py
 
 ### Left Topics
 1. RadioButtons
