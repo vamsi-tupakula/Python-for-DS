@@ -32,5 +32,17 @@ price_label.grid(row=1, column=2,sticky=W)
 price_entry = Entry(my_win, textvariable=price_text,font=('bold', 14))
 price_entry.grid(row=1, column=3)
 
+# Parts List (ListBox)
+parts_list = Listbox(my_win, width=60, height=8, border=0)
+parts_list.grid(row=3, column=0 , columnspan=3, rowspan=6, padx=20, pady=20)
+
+# create scrollbar
+scrollbar = Scrollbar(my_win)
+scrollbar.grid(row=3,column=3)
+
+# linking scrollbar to parts_list
+parts_list.configure(yscrollcommand=scrollbar.set)
+scrollbar.configure(command=parts_list.yview)
+
 my_win.resizable(False, False)
 my_win.mainloop()
