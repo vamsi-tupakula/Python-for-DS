@@ -12,3 +12,8 @@ class Database:
             price text
         )""")
         self.conn.commit()
+
+    def fetch(self):
+        self.cur.execute("SELECT * FROM parts")
+        rows = self.cur.fetchall()
+        return rows
