@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import messagebox
 from db import Database
 
 db = Database('store.db')
@@ -10,7 +11,16 @@ def populate_list():
         parts_list.insert(END, row)
 
 def add_item():
-    print('add')
+    if part_text.get() == '' or customer_text.get() == '' or retailer_text.get() == '' or price_text.get() == '':
+        messagebox.showerror('Required Fields', 'Please Include all fields..')
+        return
+    db.insert(part_text.get(), customer_text.get(), retailer_text.get(), price_text.get())
+    parts_list.delete(0, END)
+    parts_list.insert(END, (part_text.get(), customer_text.get(), retailer_text.get(), price_text.get()))
+    populate_list()
+
+def select_item(event):
+    print('select')
 
 def remove_item():
     print('remove')
@@ -64,6 +74,9 @@ scrollbar.grid(row=3,column=3)
 # linking scrollbar to parts_list
 parts_list.configure(yscrollcommand=scrollbar.set)
 scrollbar.configure(command=parts_list.yview)
+
+# binding select
+parts_list.bind('<<ListboxSelect>>', select_item)
 
 # buttons
 add_btn = Button(my_win,text='Add Part', font=('bold', 10), width=12,  command=add_item)
