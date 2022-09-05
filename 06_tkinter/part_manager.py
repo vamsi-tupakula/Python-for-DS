@@ -1,8 +1,13 @@
 from tkinter import *
+from db import Database
+
+db = Database('store.db')
 
 # functions
 def populate_list():
-    print('populate')
+    parts_list.delete(0, END)
+    for row in db.fetch():
+        parts_list.insert(END, row)
 
 def add_item():
     print('add')
@@ -49,7 +54,7 @@ price_entry = Entry(my_win, textvariable=price_text,font=('bold', 14))
 price_entry.grid(row=1, column=3)
 
 # Parts List (ListBox)
-parts_list = Listbox(my_win, width=60, height=8, border=0)
+parts_list = Listbox(my_win, width=60, height=8, border=0, font=('Arial',10,'bold'))
 parts_list.grid(row=3, column=0 , columnspan=3, rowspan=6, padx=20, pady=20)
 
 # create scrollbar
