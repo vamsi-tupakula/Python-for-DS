@@ -44,5 +44,18 @@ scrollbar.grid(row=3,column=3)
 parts_list.configure(yscrollcommand=scrollbar.set)
 scrollbar.configure(command=parts_list.yview)
 
+# buttons
+add_btn = Button(my_win,text='Add Part', width=12,  command=add_item)
+add_btn.grid(row=2,column=0, pady=20)
+
+remove_btn = Button(my_win,text='Remove Part', width=12,  command=remove_item)
+remove_btn.grid(row=2,column=1)
+
+update_btn = Button(my_win,text='Update Part', width=12,  command=update_item)
+update_btn.grid(row=2,column=2)
+
+clear_btn = Button(my_win,text='Clear Input', width=12,  command=clear_text)
+clear_btn.grid(row=2,column=3)
+
 my_win.resizable(False, False)
 my_win.mainloop()
