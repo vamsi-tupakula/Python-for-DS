@@ -7,4 +7,8 @@ res = requests.get(url)
 # print(dir(res))
 
 # get complete page content
-print(res.text)
+# print(res.text)
+
+# get status_code
+print(res.status_code)
+print(res.ok)
