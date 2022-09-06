@@ -17,3 +17,13 @@ class Sentence:
 my_sen = Sentence('This is a Python Program')
 
 print(next(my_sen))
+
+def sentence_gen(sentence):
+    for word in sentence.split():
+        yield word
+    
+gen_sen = sentence_gen('This is Jhonny Depp')
+print(next(gen_sen))
+print(next(gen_sen))
+print(next(gen_sen))
+print(next(gen_sen))
