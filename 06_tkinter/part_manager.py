@@ -18,18 +18,42 @@ def add_item():
     parts_list.delete(0, END)
     parts_list.insert(END, (part_text.get(), customer_text.get(), retailer_text.get(), price_text.get()))
     populate_list()
+    clear_text()
 
 def select_item(event):
-    print('select')
+    try:
+        global selected_item
+        index = parts_list.curselection()[0]
+        selected_item = parts_list.get(index)
+        
+        part_entry.delete(0, END)
+        part_entry.insert(END, selected_item[1])
+
+        customer_entry.delete(0, END)
+        customer_entry.insert(END, selected_item[2])
+
+        retailer_entry.delete(0, END)
+        retailer_entry.insert(END, selected_item[3])
+
+        price_entry.delete(0, END)
+        price_entry.insert(END, selected_item[4])
+    except IndexError:
+        pass
 
 def remove_item():
-    print('remove')
+    db.remove(selected_item[0])
+    populate_list()
+    clear_text()
 
 def update_item():
-    print('update')
+    db.update(selected_item[0], part_text.get(), customer_text.get(), retailer_text.get(), price_text.get())
+    populate_list()
 
 def clear_text():
-    print('clear')
+    part_entry.delete(0, END)
+    customer_entry.delete(0, END)
+    retailer_entry.delete(0, END)
+    price_entry.delete(0, END)
 
 my_win = Tk()
 my_win.title('Part Manager')
