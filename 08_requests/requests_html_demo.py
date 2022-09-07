@@ -1,4 +1,4 @@
-from requests_html import HTML
+from requests_html import HTML, HTMLSession
 
 with open('sample.html') as html_file:
     source = html_file.read()
@@ -16,8 +16,15 @@ with open('sample.html') as html_file:
 # print(find_first.html)
 
 # find elements based on classes and id's
-heading__1 = html.find('#h_2__1')
-print(heading__1[0].text)
+# heading__1 = html.find('#h_2__1')
+# print(heading__1[0].text)
 
-paras = html.find('.paragraph')
-print(paras[1].text)
+# paras = html.find('.paragraph')
+# print(paras[1].text)
+
+# fetch from url
+session = HTMLSession()
+res = session.get('https://example.com/')
+html = res.html
+
+print(html.html)
