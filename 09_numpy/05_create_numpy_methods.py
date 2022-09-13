@@ -28,3 +28,7 @@ print(new_arr)
 # arange method
 arr = np.arange(5)
 print(arr)
+
+# linspace method
+arr = np.linspace(0,10,num=20)
+print(arr)
