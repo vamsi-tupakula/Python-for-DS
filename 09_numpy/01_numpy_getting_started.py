@@ -11,3 +11,9 @@ import numpy as np
 a = np.array([1,2,3])
 print('a :', a)
 print('type(a) :', type(a))
+
+# creating 2d array
+
+b = np.array([[1,2,3],
+                [4,5,6]])
+print(b)
