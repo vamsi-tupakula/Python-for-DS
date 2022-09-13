@@ -32,3 +32,7 @@ print(arr)
 # linspace method
 arr = np.linspace(0,10,num=20)
 print(arr)
+
+# full method
+arr = np.full(shape=(2,3), fill_value=6)
+print(arr)
