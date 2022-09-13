@@ -15,3 +15,7 @@ print(arr_zeros)
 # random.random method
 arr_random = np.random.random(size=(2,3))
 print(arr_random)
+
+# random.randint method
+arr_randint = np.random.randint(0,10,size=(2,4)) # 0 is inclusive and 10 is exclusive
+print(arr_randint)
