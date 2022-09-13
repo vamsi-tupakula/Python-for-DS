@@ -24,3 +24,7 @@ arr = np.array([[1,2,3],[4,5,6]])
 print(arr)
 new_arr = arr.reshape(3,2)
 print(new_arr)
+
+# arange method
+arr = np.arange(5)
+print(arr)
