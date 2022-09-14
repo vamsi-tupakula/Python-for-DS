@@ -56,3 +56,13 @@ Create an matrix of size 3 x 3 having all the diagonal elements as 1 and rest as
 matrix = np.eye(3, dtype=np.int32)
 print('matrix : ')
 print(matrix)
+
+print('----Tile method----')
+
+a = np.arange(4)
+b = np.tile(a, (3,2))
+
+print(b)
+
+c = np.tile(b, (2,1))
+print(c)
