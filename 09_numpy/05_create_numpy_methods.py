@@ -36,3 +36,23 @@ print(arr)
 # full method
 arr = np.full(shape=(2,3), fill_value=6)
 print(arr)
+
+print("----eye method----")
+
+# eye method
+arr = np.eye(2, dtype=np.int32)
+print(arr)
+
+arr = np.eye(2,4, dtype=np.int32)
+print(arr)
+
+arr = np.eye(3,4, dtype=np.int32)
+print(arr)
+
+"""
+Create an matrix of size 3 x 3 having all the diagonal elements as 1 and rest as 0
+"""
+
+matrix = np.eye(3, dtype=np.int32)
+print('matrix : ')
+print(matrix)
