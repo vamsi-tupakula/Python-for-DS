@@ -66,3 +66,8 @@ print(b)
 
 c = np.tile(b, (2,1))
 print(c)
+
+arr = np.array([[1,2],[3,4]])
+new_arr = np.tile(arr, 2)
+print(new_arr)
+print(np.transpose(new_arr))
